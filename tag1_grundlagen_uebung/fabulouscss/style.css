@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*-----Tags----*/
+body{
+padding-top: 2%;
+@font-face {
+    font-family:"Product Sans Bold" ;
+    src: url();
+}
+}
+
+h1{
+color: darkorange;
+font-family:"Josefin Sans",sans-serif ;
+}
+
+p{
+font-size: medium;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*-----ID----*/
+#poetry{
+color:darkorange;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg);
+background-position: center;
+}
+
+
+/*-----Klassen----*/
+.first{
+padding-top: 2%;
+}
+.second{
+
+}
+.third{
+
+}
