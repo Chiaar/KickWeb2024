@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Google-New;
+    src: url(/Plakat/Google-New/Product\ Sans\ Bold.ttf);
+}
+
+
+/*TODO: MIT SVG PROBBIEREN SIEHE LINK GITHUB*/
+
+body {
+    background-color: black;
+    /*bezogen dann auf diese Angabe oben zu den Farben*/
+}
+
+.formgrid {
+    display: grid;
+    grid-template-columns: repeat(7, 14vw);
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns*/
+    grid-template-rows: repeat(7, 18vw);
+    /*gap*/ 
+}
+
+.die {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    font-family: 'Google-New', sans-serif;
+    font-weight: 700;
+    font-size: 25vw;
+    color: #ffffff;
+}
+
+.gute {
+    grid-column: 2 / 6;
+    grid-row: 3 / 7;
+    font-family: 'Google-New', sans-serif;
+    font-weight: 700;
+    font-size: 25vw;
+    color: #ffffff;
+    line-height: 1rem;
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+}
+
+.form {
+    grid-column: 2 / 6;
+    grid-row: 4 / 9;
+    font-family: 'Google-New', sans-serif;
+    font-weight: 700;
+    font-size: 25vw;
+    color: #ffffff;
+    line-height: 2rem;
+    margin-top: 5.5rem;
+    margin-left: 3rem;
+}
+.text {
+    grid-column: 2 / 4;
+    grid-row: 7 / 9;
+    font-family: 'Google-New', sans-serif;
+    font-weight: 50;
+    font-size: 2vw;
+    color: #ffffff;
+    text-align: right;
+}
