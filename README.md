@@ -8,3 +8,5 @@
 [Plakat V1](plakat_V1/index.html){:target="_blank"}
 
 [Plakat V2 Sprint 1](plakat_V2/index.html){:target="_blank"}
+
+[Plakat V3 Animationsideen](plakat_V3/240319_Sprint2_Ideen.pdf){:target="_blank"}
