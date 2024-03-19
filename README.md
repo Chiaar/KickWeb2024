@@ -1,5 +1,5 @@
 # KickWeb2024
-[Übung 1](tag1_grundlagen_uebung/Uebung1.html){:target="_blank"}
+[Übung 1](tag1_grundlagen_uebung/fabulouscss/index.html){:target="_blank"}
 
 [Übung 2](tag2_flexboxplakat_uebung/index.html){:target="_blank"}
 
