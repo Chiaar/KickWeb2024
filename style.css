@@ -134,8 +134,11 @@ body {
     outline: none;
 }
 
-.container-button-5 {
+.container-button-5 a {
     text-align: center;
+    text-decoration: none; /* Entfernt den Unterstrich */
+    color: inherit; /* Behält die Farbe des Textes bei */
+    
 }
 
 .container-button-5 button {
