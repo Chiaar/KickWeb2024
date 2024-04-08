@@ -32,6 +32,18 @@ body {
     text-transform: uppercase;
 }
 
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    pointer-events: none;
+    /* Ensure it doesn't interfere with mouse events */
+    z-index: 99;
+    /* Ensure it's on top of other elements */
+}
+
 .container-button,
 .container-button-2,
 .container-button-3 {
