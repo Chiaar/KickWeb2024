@@ -35,8 +35,9 @@ section.dotrow {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    flex-shrink: 2;
+    margin-left: 2%;
+    margin-right: 2%;
    /*---Tipp mit flexbox arbeiten --*/
 }
 
@@ -44,6 +45,7 @@ section.konzertinfo{
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
+    font-size: 1.8vw;
 }
 
 .dot {

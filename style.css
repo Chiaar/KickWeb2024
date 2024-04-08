@@ -11,6 +11,8 @@ body {
     padding-top: 0vw;
     padding-left: 1vw;
     scroll-behavior: smooth;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
 }
 
 .grid {
@@ -51,7 +53,6 @@ body {
     margin-left: -205%;
 }
 
-
 .container-button {
     text-align: center;
 }
@@ -64,6 +65,9 @@ body {
     color: white;
     border: none;
     font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto Flex", sans-serif;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -88,6 +92,8 @@ body {
     color: white;
     border: none;
     font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +118,8 @@ body {
     color: white;
     border: none;
     font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +144,9 @@ body {
     background-color: #ce5c16;
     color: white;
     border: none;
-    font-size: 3vw;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +158,11 @@ body {
 
 .container-button-5 a {
     text-align: center;
-    text-decoration: none; /* Entfernt den Unterstrich */
-    color: inherit; /* Behält die Farbe des Textes bei */
-    
+    text-decoration: none;
+    /* Entfernt den Unterstrich */
+    color: inherit;
+    /* Behält die Farbe des Textes bei */
+
 }
 
 .container-button-5 button {
@@ -164,7 +176,9 @@ body {
     background-color: #ce5c16;
     color: white;
     border: none;
-    font-size: 3vw;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -189,7 +203,9 @@ body {
     background-color: #ce5c16;
     color: white;
     border: none;
-    font-size: 3vw;
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 700;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -199,7 +215,26 @@ body {
     outline: none;
 }
 
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+
+    100%{
+        transform: scale(101%);
+    }
+}
+.container-button,
+.container-button-2,
+.container-button-3,
+.container-button-4,
+.container-button-5,
+.container-button-6 {
+    animation: scale 1s alternate-reverse ease-in-out infinite;
+}
+
 @media all and (max-width: 40em) {
+
     .container-button-4 button {
         margin-top: 110%;
         margin-left: 250%;
@@ -215,8 +250,6 @@ body {
     .container-button-6 button {
         margin-top: 380%;
         margin-left: -160%;
-        width: 70vw;
-        height: 70vw;
         transition: margin-top 0.5s ease-in-out, margin-left 0.5s ease-in-out;
     }
 
