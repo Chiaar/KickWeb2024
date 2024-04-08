@@ -18,6 +18,7 @@ body {
     padding-left: 2rem;
     /*padding-right: 1rem;*/
     padding-bottom: 1rem;
+    cursor: none;
 }
 
 .formgrid {
@@ -190,18 +191,30 @@ path {
 }
 
 .dcircle,
-    .e1circle,
-    .gcircle,
-    .ucircle,
-    .tcircle,
-    .e2circle,
-    .fcircle,
-    .ocircle,
-    .rcircle,
-    .m1circle,
-    .m2circle {
-        display: none;
-    }
+.e1circle,
+.gcircle,
+.ucircle,
+.tcircle,
+.e2circle,
+.fcircle,
+.ocircle,
+.rcircle,
+.m1circle,
+.m2circle {
+    display: none;
+}
+
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    pointer-events: none;
+    /* Ensure it doesn't interfere with mouse events */
+    z-index: 99;
+    /* Ensure it's on top of other elements */
+}
 
 /*Desktop Priorität*/
 @media all and (max-width: 40em) {
@@ -240,6 +253,16 @@ path {
         }
     }
 
+    @keyframes scale {
+        0% {
+            transform: scale(100%);
+        }
+
+        100%{
+            transform: scale(110%);
+        }
+    }
+
     .dcircle,
     .e1circle,
     .gcircle,
@@ -254,6 +277,18 @@ path {
         display: block;
         margin-top: 35%;
     }
+
+    .gcircle,
+    .ucircle,
+    .tcircle,
+    .e2circle,
+    .fcircle,
+    .ocircle,
+    .rcircle,
+    .m2circle {
+        animation: scale 1s alternate-reverse ease-in-out infinite;
+    }
+
 
     .dcircle {
         grid-column: 1 / 2;
