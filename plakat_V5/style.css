@@ -3,15 +3,6 @@
     src: url(/Plakat/Google-New/Product\ Sans\ Bold.ttf);
 }
 
-/*@keyframes slideRight {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}*/
-
 body {
     background-color: black;
     padding-top: 0rem;
@@ -209,11 +200,10 @@ path {
     height: 30px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
     position: fixed;
     pointer-events: none;
-    /* Ensure it doesn't interfere with mouse events */
     z-index: 99;
-    /* Ensure it's on top of other elements */
 }
 
 /*Desktop Priorität*/
@@ -221,6 +211,36 @@ path {
     body {
         background-color: #ffffff;
         padding-left: 2rem;
+        animation: changeBackgroundColor 6s linear forwards;
+    }
+
+    @keyframes changeBackgroundColor {
+        0% {
+            background-color: #ffffff;
+        }
+
+        92% {
+            background-color: #ffffff;
+        }
+
+        100% {
+            background-color: #000000;
+        }
+    }
+
+    @keyframes hideDots {
+        0% {
+            opacity: 1;
+        }
+
+        92% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            display: none;
+        }
     }
 
     @keyframes slideRight {
@@ -258,8 +278,22 @@ path {
             transform: scale(100%);
         }
 
-        100%{
+        100% {
             transform: scale(110%);
+        }
+    }
+
+    @keyframes textappear {
+        0% {
+            color: #000000;
+        }
+
+        92% {
+            color: #000000;
+        }
+
+        100% {
+            color: #ffffff;
         }
     }
 
@@ -276,6 +310,7 @@ path {
     .m2circle {
         display: block;
         margin-top: 35%;
+        /*animation: hideDots 1s linear forwards;*/
     }
 
     .gcircle,
@@ -295,7 +330,7 @@ path {
         grid-row: 2 / 3;
         width: 60%;
         height: auto;
-        animation: slideRight 1.5s alternate ease infinite backwards;
+        animation: slideRight 1.5s alternate ease 3 backwards, hideDots 6s forwards;
     }
 
     .e1circle {
@@ -304,7 +339,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -10%;
-        animation: slideDown 1.5s alternate ease 0.3s infinite backwards;
+        animation: slideDown 1.5s alternate ease 3 backwards, hideDots 6s forwards;
     }
 
     .gcircle {
@@ -313,6 +348,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -10%;
+        animation: hideDots 6s linear forwards;
     }
 
     .ucircle {
@@ -321,6 +357,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -40%;
+        animation: hideDots 6s linear forwards;
     }
 
     .tcircle {
@@ -329,6 +366,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -70%;
+        animation: hideDots 6s linear forwards;
     }
 
     .e2circle {
@@ -337,6 +375,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -100%;
+        animation: hideDots 6s linear forwards;
     }
 
     .fcircle {
@@ -345,6 +384,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -10%;
+        animation: hideDots 6s linear forwards;
     }
 
     .ocircle {
@@ -353,6 +393,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -40%;
+        animation: hideDots 6s linear forwards;
     }
 
     .rcircle {
@@ -361,6 +402,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -70%;
+        animation: hideDots 6s linear forwards;
     }
 
     .m1circle {
@@ -369,7 +411,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -100%;
-        animation: slideUp 1.5s alternate ease 0.5s infinite backwards;
+        animation: slideUp 1.5s alternate ease 3 backwards, hideDots 6s forwards;
     }
 
     .m2circle {
@@ -378,6 +420,7 @@ path {
         width: 60%;
         height: auto;
         margin-left: -130%;
+        animation: hideDots 6s linear forwards;
     }
 
     .text {
@@ -389,38 +432,9 @@ path {
         /* Bewegt den Text nach rechts, wenn der Benutzer mit der User darüber fährt */
     }
 
+    .text {
+        color: #ffffff;
+        animation: textappear 6s linear forwards
+    }
+
 }
-
-/*@media all and (max-width: 40em) {
-    body {
-        background-color: #ffffff;
-    }
-
-
-    .dcircle {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        width: 1100%;
-        height: auto;
-    }
-
-    .gcircle {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        width: 100%;
-        height: auto;
-        margin-left: 80%;
-        margin-top: -50%;
-    }
-
-    .e1circle {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        width: 180%;
-        height: auto;
-        margin-left: 80%;
-        margin-top: -30%;
-    }
-
-
-}*/
