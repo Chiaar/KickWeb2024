@@ -39,11 +39,10 @@ body {
     height: 30px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
     position: fixed;
     pointer-events: none;
-    /* Ensure it doesn't interfere with mouse events */
     z-index: 99;
-    /* Ensure it's on top of other elements */
 }
 
 .container-button,
@@ -159,9 +158,7 @@ body {
 .container-button-5 a {
     text-align: center;
     text-decoration: none;
-    /* Entfernt den Unterstrich */
     color: inherit;
-    /* Behält die Farbe des Textes bei */
 
 }
 
@@ -220,10 +217,11 @@ body {
         transform: scale(100%);
     }
 
-    100%{
+    100% {
         transform: scale(101%);
     }
 }
+
 .container-button,
 .container-button-2,
 .container-button-3,

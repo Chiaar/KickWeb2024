@@ -1,13 +1,12 @@
 @font-face {
     font-family: Google-New;
-    src: url(/Plakat/Google-New/Product\ Sans\ Bold.ttf);
+    src: url('/Plakat/Google-New/Product Sans Bold.ttf');
 }
 
 body {
     background-color: black;
     padding-top: 0rem;
     padding-left: 2rem;
-    /*padding-right: 1rem;*/
     padding-bottom: 1rem;
     cursor: none;
 }
@@ -25,7 +24,7 @@ body {
     margin-top: 40%;
     margin-right: 40%;
     font-family: 'Google-New', sans-serif;
-    font-weight: 50;
+    font-weight: normal;
     font-size: 1.5vw;
     color: #ffffff;
     text-align: right;
